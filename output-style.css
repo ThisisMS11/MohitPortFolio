@@ -512,3 +512,209 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
+.h-40 {
+  height: 10rem;
+}
+
+.h-2\/3 {
+  height: 66.666667%;
+}
+
+.h-3 {
+  height: 0.75rem;
+}
+
+.h-56 {
+  height: 14rem;
+}
+
+.h-72 {
+  height: 18rem;
+}
+
+.h-96 {
+  height: 24rem;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.w-12 {
+  width: 3rem;
+}
+
+.w-14 {
+  width: 3.5rem;
+}
+
+.w-16 {
+  width: 4rem;
+}
+
+.w-5 {
+  width: 1.25rem;
+}
+
+.max-w-4xl {
+  max-width: 56rem;
+}
+
+.max-w-2xl {
+  max-width: 42rem;
+}
+
+.max-w-3xl {
+  max-width: 48rem;
+}
+
+.max-w-\[52rem\] {
+  max-width: 52rem;
+}
+
+.max-w-\[55rem\] {
+  max-width: 55rem;
+}
+
+.max-w-\[6rem\] {
+  max-width: 6rem;
+}
+
+.max-w-\[65rem\] {
+  max-width: 65rem;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.content-center {
+  align-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.border-pink-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(244 114 182 / var(--tw-border-opacity));
+}
+
+.border-blue-800 {
+  --tw-border-opacity: 1;
+  border-color: rgb(30 64 175 / var(--tw-border-opacity));
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.text-blue-600 {
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
+}
