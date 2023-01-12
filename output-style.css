@@ -550,6 +550,16 @@ html {
   margin-bottom: 1rem;
 }
 
+.mx-4{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.my-2{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .mt-2{
   margin-top: 0.5rem;
 }
@@ -572,6 +582,10 @@ html {
 
 .mb-4{
   margin-bottom: 1rem;
+}
+
+.mt-4{
+  margin-top: 1rem;
 }
 
 .flex{
@@ -648,6 +662,10 @@ html {
   cursor: pointer;
 }
 
+.flex-row{
+  flex-direction: row;
+}
+
 .flex-col{
   flex-direction: column;
 }
@@ -668,12 +686,24 @@ html {
   justify-content: space-between;
 }
 
+.justify-around{
+  justify-content: space-around;
+}
+
+.justify-evenly{
+  justify-content: space-evenly;
+}
+
 .gap-6{
   gap: 1.5rem;
 }
 
 .gap-4{
   gap: 1rem;
+}
+
+.gap-2{
+  gap: 0.5rem;
 }
 
 .rounded-md{
@@ -694,6 +724,10 @@ html {
 
 .border-4{
   border-width: 4px;
+}
+
+.border{
+  border-width: 1px;
 }
 
 .border-black{
@@ -736,6 +770,11 @@ html {
   border-top-color: rgb(153 27 27 / var(--tw-border-opacity));
 }
 
+.border-t-purple-800{
+  --tw-border-opacity: 1;
+  border-top-color: rgb(107 33 168 / var(--tw-border-opacity));
+}
+
 .bg-purple-600{
   --tw-bg-opacity: 1;
   background-color: rgb(147 51 234 / var(--tw-bg-opacity));
@@ -743,6 +782,20 @@ html {
 
 .p-4{
   padding: 1rem;
+}
+
+.p-6{
+  padding: 1.5rem;
+}
+
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .pl-4{
@@ -761,9 +814,33 @@ html {
   padding-right: 1rem;
 }
 
+.text-center{
+  text-align: center;
+}
+
 .text-5xl{
   font-size: 3rem;
   line-height: 1;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-medium{
@@ -778,6 +855,10 @@ html {
   font-weight: 400;
 }
 
+.font-bold{
+  font-weight: 700;
+}
+
 .text-gray-500{
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
@@ -786,6 +867,11 @@ html {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-gray-600{
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
 @media (min-width: 500px){
@@ -799,6 +885,10 @@ html {
 }
 
 @media (min-width: 1000px){
+  .desktopstart\:flex{
+    display: flex;
+  }
+
   .desktopstart\:h-\[45\%\]{
     height: 45%;
   }
@@ -829,6 +919,18 @@ html {
 
   .desktopstart\:flex-row{
     flex-direction: row;
+  }
+
+  .desktopstart\:flex-col{
+    flex-direction: column;
+  }
+
+  .desktopstart\:items-center{
+    align-items: center;
+  }
+
+  .desktopstart\:justify-center{
+    justify-content: center;
   }
 
   .desktopstart\:bg-black{
