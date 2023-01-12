@@ -560,6 +560,11 @@ html {
   margin-bottom: 0.5rem;
 }
 
+.mx-6{
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
 .mt-2{
   margin-top: 0.5rem;
 }
@@ -586,6 +591,10 @@ html {
 
 .mt-4{
   margin-top: 1rem;
+}
+
+.ml-6{
+  margin-left: 1.5rem;
 }
 
 .flex{
@@ -656,6 +665,27 @@ html {
 
 .animate-bounce{
   animation: bounce 1s infinite;
+}
+
+@keyframes ping{
+  75%, 100%{
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.animate-ping{
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes pulse{
+  50%{
+    opacity: .5;
+  }
+}
+
+.animate-pulse{
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 .cursor-pointer{
@@ -788,6 +818,18 @@ html {
   padding: 1.5rem;
 }
 
+.p-2{
+  padding: 0.5rem;
+}
+
+.p-0{
+  padding: 0px;
+}
+
+.p-\[0\.65rem\]{
+  padding: 0.65rem;
+}
+
 .px-2{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -812,6 +854,10 @@ html {
 
 .pr-4{
   padding-right: 1rem;
+}
+
+.pl-6{
+  padding-left: 1.5rem;
 }
 
 .text-center{
@@ -857,6 +903,10 @@ html {
 
 .font-bold{
   font-weight: 700;
+}
+
+.font-light{
+  font-weight: 300;
 }
 
 .text-gray-500{
