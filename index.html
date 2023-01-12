@@ -18,7 +18,7 @@
                 <div>
                     <img src="./MSLogo.png" alt="image not found" class="w-16 h-12">
                 </div>
-                <ul class="flex gap-6 border-pink-400 w-fit items-center font-semibold cursor-pointer">
+                <ul class="lg:flex gap-6 border-pink-400 w-fit items-center font-medium cursor-pointer hidden">
                     <li>Home</li>
                     <li>About</li>
                     <li>Skills</li>
@@ -29,18 +29,56 @@
             </nav>
         </header>
 
-        <section class="border-2 border-black h-96">
-            <div id="SocialIcons" class=" border-2 border-blue-800 h-full w-fit p-4 flex items-center">
-                <div class="flex flex-col gap-4  border-black">
+        <section class=" border-black h-fit flex my-14  ">
+            <div id="SocialIcons" class="  border-blue-800 w-fit pl-4 flex flex-col  items-center justify-center">
+                <div class="flex flex-col gap-4  border-black items-center justify-center">
                     <i class="uil uil-github-alt"></i>
                     <i class="uil uil-linkedin-alt"></i>
                     <i class="uil uil-twitter-alt"></i>
                 </div>
             </div>
 
-            <div>
-                Hi Myself Mohit Saini
+            <div class=" border-t-red-800 flex flex-col-reverse desktopstart:flex-row" id="textpart">
+
+
+
+                <div class=" border-black w-full flex items-center justify-center flex-col ">
+
+                    <div class=" border-green-900 w-[80%]">
+                        <div id="main_heading" class=" border-green-400  text-5xl font-semibold w-fit h-fit">
+                            Hi, I'am Mohit Saini
+                        </div>
+                        <div id="professionheading" class="font-semibold text-gray-500 my-4 text-md ">
+                            I am a Backend Web Developer
+                        </div>
+
+                        <div id="mydescription" class=" border-orange-800 text-gray-500 font-normal mt-2">
+                            High level experience in web design and development knowledge, producing quality work.
+                        </div>
+
+                        <button class=" border-pink-700 p-4 rounded-md bg-purple-600 text-white mt-8 flex">
+                            <div class="font-medium">
+                                Contact Me
+                            </div>
+
+                            <i class="uil uil-message ml-3"></i>
+                        </button>
+
+                        <div id="scrolldown" class=" border-pink-700 rounded-lg w-fit flex pl-1 pt-4 pr-4 my-4">
+                            <i class="uil uil-mouse-alt mr-2"></i>
+                            <div> Scroll down</div>
+                            <i class="uil uil-arrow-down animate-bounce ml-2"></i>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="w-[60%] h-[40%]  border-black flex items-center justify-center mx-auto mb-4 sm:w-[45%] sm:[h-40%] photospecific:w-[28%] photospecific:h-[35%] desktopstart:h-[75%] desktopstart:w-[30%]">
+                    <img src="./assets/mohitwithpurple.png" alt="image not found" class="w-full h-full rounded-full ">
+                </div>
             </div>
+
         </section>
     </div>
 </body>
