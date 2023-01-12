@@ -10,3 +10,24 @@
         font-family: 'Poppins', sans-serif;
     }
 }
+
+.skillname {
+    @apply  border-black w-fit text-xl font-semibold ml-2;
+}
+
+.skillmeter{
+    @apply w-[95%] ml-2 h-fit border-[1px] border-gray-300 mb-10  mt-2 rounded-md;
+}
+
+.skillfiller{
+    @apply h-2 bg-purple-600 rounded-md;
+}
+
+#Allskills{
+    border: solid 2px red;
+    transition: all ease-in-out 1s  0.2s;
+}
+
+.AllskillsCollapse{
+    height: 0px;
+}
