@@ -1,0 +1,45 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.dropdown {
+    position: relative;
+    /* border: solid 1px red; */
+
+}
+
+/*! you can't create animations when you are doing something like display:none to display:block */
+
+.dropdown-menu {
+    position: absolute;
+    border: solid 1px black;
+    left: 0px;
+    top: calc(100% + 0.25rem);
+    background-color: white;
+    padding: 0.75rem;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, .1);
+    /* to creating the dropdown falling effect */
+
+
+    /* to avoid any event to happen on clicking on the dropdown as it is still there  */
+    pointer-events: none;
+
+
+    transform: translateY(-10px);
+    transition: opacity 250ms ease-in-out, transform 250ms ease-in-out;
+    opacity: 0;
+}
+
+/* here we are selecting the direct child of dropdown i.e. link whenever it is under focus and along with that we are also selecting .dropdown-menu  */
+
+/* .dropdown>.link:focus+.dropdown-menu {
+    opacity: 1;
+    transform: translateY(0px);
+    pointer-events: all;
+} */
+.dropdown.active>.link+.dropdown-menu {
+    opacity: 1;
+    transform: translateY(0px);
+    pointer-events: all;
+}

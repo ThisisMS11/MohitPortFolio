@@ -8,6 +8,7 @@
     <title>Hello this is good</title>
     <link rel="stylesheet" href="output-style.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="./public/index.js" defer></script>
 
 </head>
 
@@ -30,11 +31,13 @@
         </header>
 
         <section class=" border-black h-fit flex my-14  ">
-            <div id="SocialIcons" class="  border-blue-800 w-fit pl-4 flex flex-col  items-center justify-center">
-                <div class="flex flex-col gap-4  border-black items-center justify-center">
-                    <i class="uil uil-github-alt"></i>
-                    <i class="uil uil-linkedin-alt"></i>
-                    <i class="uil uil-twitter-alt"></i>
+
+            <div id="SocialIcons"
+                class="  border-blue-800 w-fit pl-4 flex flex-col  items-center justify-center">
+                <div class="flex flex-col gap-4  border-black items-center justify-center h-full">
+                    <img src="./assets/github-alt.svg" alt="image not found" class="w-6 h-6">
+                    <img src="./assets/linkedin-alt.svg" alt="image not found" class="w-6 h-6">
+                    <img src="./assets/twitter-alt.svg" alt="image not found" class="w-6 h-6">
                 </div>
             </div>
 
@@ -56,7 +59,7 @@
                             High level experience in web design and development knowledge, producing quality work.
                         </div>
 
-                        <button class=" border-pink-700 p-4 rounded-md bg-purple-600 text-white mt-8 flex">
+                        <button class=" border-pink-700 p-4  bg-purple-600 text-white mt-8 flex rounded-md">
                             <div class="font-medium">
                                 Contact Me
                             </div>
@@ -65,7 +68,8 @@
                         </button>
 
                         <div id="scrolldown" class=" border-pink-700 rounded-lg w-fit flex pl-1 pt-4 pr-4 my-4">
-                            <i class="uil uil-mouse-alt mr-2"></i>
+                            <!-- <i class="uil uil-mouse-alt mr-2"></i> -->
+                            <img src="./assets/mouse-alt.svg" alt="" class="w-6 h-6 mr-2">
                             <div> Scroll down</div>
                             <i class="uil uil-arrow-down animate-bounce ml-2"></i>
 
@@ -118,7 +122,7 @@
                     </div>
 
                     <div>
-                        <button class="rounded-md p-[0.65rem] bg-purple-600 text-white ml-6 mt-4 desktopstart:  ">My
+                        <button class=" p-[0.65rem] bg-purple-600 text-white ml-6 mt-4 desktopstart: rounded-md ">My
                             Resume
                             <i class="uil uil-external-link-alt"></i>
                         </button>
@@ -138,159 +142,176 @@
         </section>
 
 
+
+
         <section id="Skills" class=" border-black mt-2">
             <div id="Skills-heading">
                 <div class=" border-pink-700 text-3xl font-semibold text-center">Skills</div>
                 <div class="text-md text-gray-500 text-center ">My Technical Level</div>
             </div>
 
-
-            <div id="frontendSkills">
-
-                <div id="category" class=" border-red-600 flex w-full">
-                    <div class="category-icon  border-black w-[15%] p-4">
-                        <i class="uil uil-brackets-curly"></i>
-                    </div>
-
-                    <div class="category-name  border-black  w-[70%]  p-4 text-xl font-semibold text-center">
-                        FrontEnd Developer
-                    </div>
-
-                    <div class="category-name  border-black  w-[15%]  p-4 mx-auto" id="frontendSkillsarrow">
-                        <i class="uil uil-angle-up cursor-pointer"></i>
-                    </div>
-                </div>
+            <div class=" border-black desktopstart:flex desktopstart:justify-between">
 
 
+                <div id="frontendSkills" skillsdropdownmenu class=" border-black ml-2 desktopstart:w-[48%]">
 
-                <div id="Allskills" class=" border-red-700 ">
-
-
-
-                    <div id="skillcontainer1">
-                        <div class="flex justify-between">
-                            <div class=" skillname ">
-                                React
-                            </div>
-                            <div id="skillpercentage" class="w-fit mr-2">
-                                75%
-                            </div>
+                    <div id="category" class=" border-red-600 flex w-full items-center mb-2">
+                        <div class="category-icon  border-black w-[15%] p-4">
+                            <img src="./assets/brackets-curly.svg" alt="image not found">
                         </div>
 
-                        <div class="skillmeter">
-                            <div class="w-[60%] h-2 bg-purple-600 rounded-md"></div>
-                        </div>
-                    </div>
-
-                    <div id="skillcontainer2">
-                        <div class="flex justify-between">
-                            <div class="skillname ">
-                                JavaScript
-                            </div>
-                            <div id="skillpercentage" class="w-fit mr-2">
-                                85%
-                            </div>
+                        <div
+                            class="category-name  border-black  w-[70%]  p-4 text-xl font-semibold text-center text-gray-500">
+                            Frontend Developer
                         </div>
 
-                        <div class="skillmeter">
-                            <div class="w-[80%] h-2 bg-purple-600 rounded-md"></div>
-                        </div>
-                    </div>
+                        <div class="category-name  border-black  w-[15%]  p-4 mx-auto" id="frontendSkillsarrow">
 
-                    <div id="skillcontainer3">
-                        <div class="flex justify-between">
-                            <div class="skillname">
-                                TypeScript
-                            </div>
-                            <div id="skillpercentage" class="w-fit mr-2">
-                                50%
-                            </div>
-                        </div>
 
-                        <div class="skillmeter">
-                            <div class="w-[40%] skillfiller"></div>
+                            <img src="./assets/angle-down.svg" uparrow alt="image not found" class="cursor-pointer">
+
+
                         </div>
                     </div>
 
 
-                </div>
+
+                    <div
+                        class="Allskills  border-red-700 opacity-0  transition ease-in duration-250 delay-75  -translate-y-[15px] p-[0.85rem]">
 
 
 
-            </div>
-
-            <div id="BackendSkills">
-
-                <div id="category" class=" border-red-600 flex w-full">
-                    <div class="category-icon  border-black w-[15%] p-4">
-                        <i class="uil uil-brackets-curly"></i>
-                    </div>
-
-                    <div class="category-name  border-black  w-[70%]  p-4 text-xl font-semibold text-center">
-                        Backend Developer
-                    </div>
-
-                    <div class="category-name  border-black  w-[15%]  p-4 mx-auto" id="BackendSkillsarrow">
-                        <i class="uil uil-angle-up cursor-pointer"></i>
-                    </div>
-                </div>
-
-
-
-                <div id="Allskills" class=" border-red-700 ">
-
-
-
-                    <div id="skillcontainer1">
-                        <div class="flex justify-between">
-                            <div class=" skillname ">
-                                Node js
+                        <div id="skillcontainer1">
+                            <div class="flex justify-between">
+                                <div class=" skillname ">
+                                    React
+                                </div>
+                                <div id="skillpercentage" class="w-fit mr-2">
+                                    75%
+                                </div>
                             </div>
-                            <div id="skillpercentage" class="w-fit mr-2">
-                                75%
+
+                            <div class="skillmeter">
+                                <div class="w-[60%] h-2 bg-purple-600 "></div>
                             </div>
                         </div>
 
-                        <div class="skillmeter">
-                            <div class="w-[60%] h-2 bg-purple-600 rounded-md"></div>
-                        </div>
-                    </div>
-
-                    <div id="skillcontainer2">
-                        <div class="flex justify-between">
-                            <div class="skillname ">
-                                Express
+                        <div id="skillcontainer2">
+                            <div class="flex justify-between">
+                                <div class="skillname ">
+                                    JavaScript
+                                </div>
+                                <div id="skillpercentage" class="w-fit mr-2">
+                                    85%
+                                </div>
                             </div>
-                            <div id="skillpercentage" class="w-fit mr-2">
-                                85%
-                            </div>
-                        </div>
 
-                        <div class="skillmeter">
-                            <div class="w-[80%] h-2 bg-purple-600 rounded-md"></div>
-                        </div>
-                    </div>
-
-                    <div id="skillcontainer3">
-                        <div class="flex justify-between">
-                            <div class="skillname">
-                                MongoDB
-                            </div>
-                            <div id="skillpercentage" class="w-fit mr-2">
-                                50%
+                            <div class="skillmeter">
+                                <div class="w-[80%] h-2 bg-purple-600 "></div>
                             </div>
                         </div>
 
-                        <div class="skillmeter">
-                            <div class="w-[40%] skillfiller"></div>
+                        <div id="skillcontainer3">
+                            <div class="flex justify-between">
+                                <div class="skillname">
+                                    TypeScript
+                                </div>
+                                <div id="skillpercentage" class="w-fit mr-2">
+                                    50%
+                                </div>
+                            </div>
+
+                            <div class="skillmeter">
+                                <div class="w-[40%] skillfiller"></div>
+                            </div>
                         </div>
+
+
                     </div>
 
 
 
                 </div>
 
+                <div id="BackendSkills" skillsdropdownmenu
+                    class=" border-black w-full ml-2 desktopstart:w-[48%]">
 
+                    <div id="category" class=" border-red-600 flex w-full items-center mb-2">
+                        <div class="category-icon  border-black w-[15%] p-4">
+                            <!-- <i class="uil uil-server-network  border-black"></i> -->
+                            <img src="./assets/server-network.svg" alt="">
+                        </div>
+
+                        <div
+                            class="category-name  border-black  w-[70%]  p-4 text-xl font-semibold text-center text-gray-500">
+                            Backend Developer
+                        </div>
+
+                        <div class="category-name  border-black  w-[15%]  p-4 mx-auto" id="BackendSkillsarrow">
+
+                            <img src="./assets/angle-down.svg" uparrow alt="" class="cursor-pointer">
+                        </div>
+                    </div>
+
+
+
+                    <div
+                        class="Allskills  border-red-700  opacity-0  transition ease-in-out duration-200  delay-75 -translate-y-[15px] p-[0.85rem]">
+
+
+
+                        <div id="skillcontainer1">
+                            <div class="flex justify-between">
+                                <div class=" skillname ">
+                                    Node js
+                                </div>
+                                <div id="skillpercentage" class="w-fit mr-2 ">
+                                    75%
+                                </div>
+                            </div>
+
+                            <div class="skillmeter">
+                                <div class="w-[60%] h-2 bg-purple-600 "></div>
+                            </div>
+                        </div>
+
+                        <div id="skillcontainer2">
+                            <div class="flex justify-between">
+                                <div class="skillname ">
+                                    Express
+                                </div>
+                                <div id="skillpercentage" class="w-fit mr-2">
+                                    85%
+                                </div>
+                            </div>
+
+                            <div class="skillmeter">
+                                <div class="w-[80%] h-2 bg-purple-600 "></div>
+                            </div>
+                        </div>
+
+                        <div id="skillcontainer3">
+                            <div class="flex justify-between">
+                                <div class="skillname">
+                                    MongoDB
+                                </div>
+                                <div id="skillpercentage" class="w-fit mr-2">
+                                    50%
+                                </div>
+                            </div>
+
+                            <div class="skillmeter">
+                                <div class="w-[40%] skillfiller"></div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+
+
+                </div>
 
             </div>
 
@@ -302,26 +323,6 @@
 
     </div>
 
-
-    <script>
-        var downarrow = document.getElementById("frontendSkillsarrow");
-
-        const Allskills = document.getElementById("Allskills");
-
-        console.log(downarrow);
-
-        downarrow.addEventListener("click", () => {
-            Allskills.classList.toggle("AllskillsCollapse")
-            if (Allskills.style.display == 'block') {
-                Allskills.style.display = 'none'
-            }
-            else {
-                Allskills.style.display = 'block'
-            }
-
-        })
-
-    </script>
 </body>
 
 </html>

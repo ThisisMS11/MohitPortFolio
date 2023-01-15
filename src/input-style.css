@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&display=swap');
 
 
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -12,22 +13,21 @@
 }
 
 .skillname {
-    @apply  border-black w-fit text-xl font-semibold ml-2;
+    @apply border-black w-fit text-xl font-medium ml-2;
 }
 
-.skillmeter{
-    @apply w-[95%] ml-2 h-fit border-[1px] border-gray-300 mb-10  mt-2 rounded-md;
+.skillmeter {
+    @apply w-[95%] ml-2 h-fit border-[0px] border-gray-300 mb-10 mt-2 bg-purple-200;
 }
 
-.skillfiller{
-    @apply h-2 bg-purple-600 rounded-md;
+.skillfiller {
+    @apply h-2 bg-purple-600;
 }
 
-#Allskills{
-    border: solid 2px red;
-    transition: all ease-in-out 1s  0.2s;
-}
-
-.AllskillsCollapse{
-    height: 0px;
+.Allskills.active {
+    opacity: 1;
+    transform: translateY(0px);
+    border-radius: 10px;
+    /* padding: 0.85rem; */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, .1);
 }
