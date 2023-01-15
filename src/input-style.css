@@ -24,10 +24,13 @@
     @apply h-2 bg-purple-600;
 }
 
+
 .Allskills.active {
     opacity: 1;
     transform: translateY(0px);
     border-radius: 10px;
-    /* padding: 0.85rem; */
+    /* display: block; */
+    height: fit-content;
+
     box-shadow: 0 2px 15px rgba(0, 0, 0, .1);
 }
