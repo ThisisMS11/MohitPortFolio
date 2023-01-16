@@ -736,6 +736,22 @@ html {
   width: 50%;
 }
 
+.w-\[30\%\]{
+  width: 30%;
+}
+
+.w-\[20\%\]{
+  width: 20%;
+}
+
+.w-\[00\%\]{
+  width: 00%;
+}
+
+.w-\[24\%\]{
+  width: 24%;
+}
+
 .max-w-\[65rem\]{
   max-width: 65rem;
 }
@@ -1200,6 +1216,10 @@ html {
 
   .desktopstart\:w-\[75\%\]{
     width: 75%;
+  }
+
+  .desktopstart\:w-\[15\%\]{
+    width: 15%;
   }
 
   .desktopstart\:flex-row{
