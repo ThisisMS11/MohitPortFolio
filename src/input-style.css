@@ -36,26 +36,26 @@
 }
 
 
-.swiper {
-    width: 600px;
-    height: 600px;
-    /* position: absolute;
-    left: 50%;
-    top: 50%; */
-    /* margin-left: -150px;
-    margin-top: -150px; */
-}
-
-.swiper-slide {
-    background-position: center;
-    background-size: cover;
-}
-
-.swiper-slide img {
-    display: block;
+.swiper{
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    height: fit-content  !important;
+
 }
 
-#projectsCorosuel img {
+.swiper-wrapper {
+    height: fit-content !important;
+    padding: 26px !important;
+    margin: 8px;
+    width: 100%;
+    /* padding: 0px 8px !important; */
+}
+.swiper-slide{
+    margin: 0px 5px;
+}
+
+.mycard img {
     box-shadow: 0 2px 15px rgba(0, 0, 0, .3);
 }
