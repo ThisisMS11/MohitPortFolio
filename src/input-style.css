@@ -36,12 +36,12 @@
 }
 
 
-.swiper{
+.swiper {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
-    height: fit-content  !important;
+    height: fit-content !important;
 
 }
 
@@ -52,10 +52,25 @@
     width: 100%;
     /* padding: 0px 8px !important; */
 }
-.swiper-slide{
+
+.swiper-slide {
     margin: 0px 5px;
 }
 
 .mycard img {
     box-shadow: 0 2px 15px rgba(0, 0, 0, .3);
 }
+
+.contact-me-form input {
+    border-radius: 4px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, .1);
+    color: black;
+    background-color: rgb(220, 220, 243);
+    width: 80%;
+
+}
+
+.contact-me-form input {
+    @apply p-4 border-black font-light my-2 placeholder-gray-600 text-sm opacity-80 desktopstart:w-full;
+}
+
