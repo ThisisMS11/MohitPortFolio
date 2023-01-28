@@ -11,6 +11,7 @@
 @layer base {
     html {
         font-family: 'Sofia Sans', sans-serif;
+        scroll-behavior: smooth
     }
 }
 
@@ -78,9 +79,13 @@
 } */
 
 .contact-me-form input {
-    @apply p-4 border-black font-light my-2 placeholder-gray-600 text-sm opacity-80 desktopstart:w-full;
+    @apply p-4 border-black font-light my-2 placeholder-gray-600 text-sm opacity-80 desktopstart: w-full;
 }
 
 .footer-social-icons img {
-    @apply w-8 h-8 my-1  border-black text-white;
+    @apply w-8 h-8 my-1 border-black text-white;
+}
+
+#bottomMenu {
+    box-shadow: -7px -2px 11px 1px #0000001a;;
 }
