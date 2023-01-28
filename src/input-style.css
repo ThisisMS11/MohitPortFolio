@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Padyakke+Expanded+One&family=Roboto&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -8,7 +10,7 @@
 
 @layer base {
     html {
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Sofia Sans', sans-serif;
     }
 }
 
@@ -70,7 +72,15 @@
 
 }
 
+/* #footer{
+    
+    background-image: linear-gradient(-85deg, white, #8719de);
+} */
+
 .contact-me-form input {
     @apply p-4 border-black font-light my-2 placeholder-gray-600 text-sm opacity-80 desktopstart:w-full;
 }
 
+.footer-social-icons img {
+    @apply w-8 h-8 my-1  border-black text-white;
+}
