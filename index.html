@@ -367,7 +367,7 @@
                                 </div>
 
                                 <button
-                                    class=" p-[0.65rem] bg-purple-600 text-white  mt-4 desktopstart: rounded-md text-semibold">
+                                    class=" p-[0.65rem] bg-purple-600 text-white  mt-4 desktopstart:rounded-md text-semibold">
                                     Demo
                                     <i class="uil uil-external-link-alt"></i>
                                 </button>
@@ -552,18 +552,60 @@
 
 
 
-    <section id="bottomMenu" class=" border-black fixed bottom-0 w-full bg-white z-10 flex justify-between ">
-        <div class=" border-black p-2 font-bold"><img src="./MSLogo.png" alt="image not found" class="w-14 h-12"></div>
-        <div class="buttons flex  gap-4  border-y-emerald-700 mr-2">
-            <div class="dark-mode  border-red-500 w-7 flex items-center justify-center  cursor-pointer">
-                <img src="./assets/moon-light.svg" alt="image not found">
+    <section id="bottomMenu"
+        class=" border-black fixed bottom-0 w-full bg-white z-10 flex justify-between flex-col rounded-tr-lg rounded-tl-lg  ">
+        <div id="actualmenu" class=" border-green-700 h-36 text-center p-1 mb-4">
+
+            <div class=" border-red-500 flex ">
+                <div class="bottomMenuIconsDivs">
+                    <img src="./assets/bottomMenu/home-dark.svg" alt="image not found" class="bottomMenuIconsImg">
+                    home
+                </div>
+                <div class="bottomMenuIconsDivs">
+                    <img src="./assets/bottomMenu/about-dark.svg" alt="image not found" class="bottomMenuIconsImg">
+                    About
+                </div>
+                <div class="bottomMenuIconsDivs">
+                    <img src="./assets/bottomMenu/skills-dark.svg" alt="image not found" class="bottomMenuIconsImg">
+                    Skills
+                </div>
+
             </div>
-            <div class="menu  border-red-500  w-9 flex items-center justify-center cursor-pointer">
-                <img src="./assets/bars-light.svg" alt="image not found">
+
+            <div class=" border-red-500 flex ">
+                <div class="bottomMenuIconsDivs">
+                    <img src="./assets/bottomMenu/services-dark.svg" alt="image not found" class="bottomMenuIconsImg">
+                    Services
+                </div>
+                <div class="bottomMenuIconsDivs">
+                    <img src="./assets/bottomMenu/prt-dark.svg" alt="image not found" class="bottomMenuIconsImg">
+                    Portfolio
+                </div>
+
+                <div class="bottomMenuIconsDivs">
+                    <img src="./assets/bottomMenu/contactme-dark.svg" alt="image not found" class="bottomMenuIconsImg">
+                    Contact Me
+                </div>
             </div>
         </div>
-    </section>
 
+
+        <div class="flex  border-green-700 bg-white justify-between">
+            <div class=" border-black p-1 font-bold">
+                <img src="./MSLogo.png" alt="image not found" class="w-14 h-12">
+            </div>
+
+            <div class="buttons flex  gap-4  border-y-emerald-700 mr-2">
+                <div class="dark-mode  border-red-500 w-5 flex items-center justify-center  cursor-pointer opacity-75">
+                    <img src="./assets/moon-light.svg" alt="image not found">
+                </div>
+                <div class="menu  border-red-500  w-7 flex items-center justify-center cursor-pointer opacity-75">
+                    <img src="./assets/bars-light.svg" alt="image not found">
+                </div>
+            </div>
+
+        </div>
+    </section>
 </body>
 
 </html>
