@@ -1,0 +1,8 @@
+/* css for the bottom bar */
+.actualmenu-show {
+    height: 144px;
+}
+
+#actualmenu {
+    transition: all 0.65s ease-in-out 0.1s;
+}

@@ -14,9 +14,11 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
     <link rel="stylesheet" href="./src/input-style.css">
-
+    <link rel="stylesheet" href="./public/mycss.css">
 
     <script src="./public/index.js" defer></script>
+    <script src="https://unpkg.com/mongodb@4.3.0/lib/umd/bundle.min.js"></script>
+
 
 
 </head>
@@ -38,6 +40,7 @@
                 </ul>
             </nav>
         </header>
+
 
         <section class="Myself border-black h-fit flex my-14  ">
 
@@ -131,10 +134,12 @@
                     </div>
 
                     <div>
-                        <button class=" p-[0.65rem] bg-purple-600 text-white ml-4 mt-4 desktopstart: rounded-md ">My
-                            Resume
-                            <i class="uil uil-external-link-alt"></i>
-                        </button>
+                        <a href="https://drive.google.com/file/d/1CGEaIIfJBjtzNgcrGUFvwsaZP2HNlAw-/view?usp=sharing" target="_blank">
+                            <button class=" p-[0.65rem] bg-purple-600 text-white ml-4 mt-4 desktopstart: rounded-md ">My
+                                Resume
+                                <i class="uil uil-external-link-alt"></i>
+                            </button>
+                        </a>
                     </div>
 
                 </div>
@@ -173,7 +178,7 @@
 
                         <div
                             class="category-name  border-black  w-[70%]  p-4 text-xl font-semibold text-center text-gray-500">
-                            Frontend Developer
+                            Frontend Skills
                         </div>
 
                         <div class="category-name  border-black  desktopstart:w-[15%]  w-[24%] p-4 mx-auto"
@@ -202,22 +207,22 @@
                                     React
                                 </div>
                                 <div id="skillpercentage" class="w-fit mr-2">
-                                    75%
+                                    90%
                                 </div>
                             </div>
 
                             <div class="skillmeter">
-                                <div class="w-[60%] h-2 bg-purple-600 "></div>
+                                <div class="w-[85%] h-2 bg-purple-600 "></div>
                             </div>
                         </div>
 
                         <div id="skillcontainer2">
                             <div class="flex justify-between">
                                 <div class="skillname ">
-                                    JavaScript
+                                    Next.js
                                 </div>
                                 <div id="skillpercentage" class="w-fit mr-2">
-                                    85%
+                                    80%
                                 </div>
                             </div>
 
@@ -232,12 +237,12 @@
                                     TypeScript
                                 </div>
                                 <div id="skillpercentage" class="w-fit mr-2">
-                                    50%
+                                    80%
                                 </div>
                             </div>
 
                             <div class="skillmeter">
-                                <div class="w-[40%] skillfiller"></div>
+                                <div class="w-[80%] skillfiller"></div>
                             </div>
                         </div>
 
@@ -259,7 +264,7 @@
 
                         <div
                             class="category-name  border-black  w-[70%]  p-4 text-xl font-semibold text-center text-gray-500">
-                            Backend Developer
+                            Backend Skills
                         </div>
 
                         <div class="category-name  border-black  desktopstart:w-[15%]  w-[24%] p-4 mx-auto"
@@ -279,45 +284,45 @@
                         <div id="skillcontainer1">
                             <div class="flex justify-between">
                                 <div class=" skillname ">
-                                    Node js
+                                    Express Node
                                 </div>
                                 <div id="skillpercentage" class="w-fit mr-2 ">
-                                    75%
+                                    95%
                                 </div>
                             </div>
 
                             <div class="skillmeter">
-                                <div class="w-[60%] h-2 bg-purple-600 "></div>
+                                <div class="w-[90%] h-2 bg-purple-600 "></div>
                             </div>
                         </div>
 
                         <div id="skillcontainer2">
                             <div class="flex justify-between">
                                 <div class="skillname ">
-                                    Express
+                                    MongoDB & Mongoose
                                 </div>
                                 <div id="skillpercentage" class="w-fit mr-2">
-                                    85%
+                                    95%
                                 </div>
                             </div>
 
                             <div class="skillmeter">
-                                <div class="w-[80%] h-2 bg-purple-600 "></div>
+                                <div class="w-[90%] h-2 bg-purple-600 "></div>
                             </div>
                         </div>
 
                         <div id="skillcontainer3">
                             <div class="flex justify-between">
                                 <div class="skillname">
-                                    MongoDB
+                                    Ruby on Rails
                                 </div>
                                 <div id="skillpercentage" class="w-fit mr-2">
-                                    50%
+                                    80%
                                 </div>
                             </div>
 
                             <div class="skillmeter">
-                                <div class="w-[40%] skillfiller"></div>
+                                <div class="w-[70%] skillfiller"></div>
                             </div>
                         </div>
 
@@ -345,32 +350,66 @@
             <div class="swiper mySwiper  border-blue-700 flex items-center justify-center w-[48rem]">
                 <div class="swiper-wrapper  p-4 border-black">
 
-
                     <div
                         class="swiper-slide mycard  border-black flex flex-col desktopstart:flex-row desktopstart:mt-8 mt-8 ">
 
                         <div id="imagephotodiv"
                             class=" border-red-400  desktopstart:w-[70%] h-[15rem] desktopstart:ml-4 w-[80%] mx-auto ">
-                            <img src="https://source.unsplash.com/random" alt="image not found"
+                            <img src="./assets/projects/flashbyte.png" alt="image not found"
                                 class="w-full h-full rounded-md">
                         </div>
 
                         <div class=" border-green-600  w-[80%] flex items-center justify-center mt-6 mx-auto ">
                             <div class="  border-black desktopstart:w-[80%] w-full ">
                                 <div id="heading" class=" border-black  text-2xl font-semibold text-gray-800 mb-4">
-                                    Modern Website
+                                    FlashByte
                                 </div>
 
                                 <div id="content" class=" border-black  text-md font-normal text-gray-500">
-                                    Website Adaptable to all kinds of devices, with ui components and animated
-                                    interactions.
+                                    A Social Media application where you can share your thoughts and ideas with the
+                                    world.
                                 </div>
 
-                                <button
-                                    class=" p-[0.65rem] bg-purple-600 text-white  mt-4 desktopstart: rounded-md text-semibold">
-                                    Demo
-                                    <i class="uil uil-external-link-alt"></i>
-                                </button>
+                                <a href="https://besocial-client.vercel.app/" target="_blank">
+                                    <button
+                                        class=" p-[0.65rem] bg-purple-600 text-white  mt-4 desktopstart:rounded-md text-semibold">
+                                        Demo
+                                        <i class="uil uil-external-link-alt"></i>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="swiper-slide mycard  border-black flex flex-col desktopstart:flex-row desktopstart:mt-8 mt-8 ">
+
+                        <div id="imagephotodiv"
+                            class=" border-red-400  desktopstart:w-[70%] h-[15rem] desktopstart:ml-4 w-[80%] mx-auto ">
+                            <img src="./assets/projects/Weebit.png" alt="image not found"
+                                class="w-full h-full rounded-md">
+                        </div>
+
+                        <div class=" border-green-600  w-[80%] flex items-center justify-center mt-6 mx-auto">
+                            <div class=" border-black desktopstart:w-[80%] w-full ">
+                                <div id="heading" class=" border-black  text-2xl font-semibold text-gray-800 mb-4">
+                                    Weebit
+                                </div>
+
+                                <div id="content" class=" border-black  text-md font-normal text-gray-500">
+                                    Implemented a user‑centric interface, enabling users to easily view and upload short
+                                    content, fostering a dynamic and engaging user community.
+                                </div>
+
+                                <a href="https://wee-bit-hosting.vercel.app/" target="_blank">
+                                    <button
+                                        class=" p-[0.65rem] bg-purple-600 text-white mt-4 desktopstart: rounded-md text-semibold">
+                                        Demo
+                                        <i class="uil uil-external-link-alt"></i>
+                                    </button>
+                                </a>
                             </div>
                         </div>
 
@@ -380,55 +419,29 @@
 
                         <div id="imagephotodiv"
                             class=" border-red-400  desktopstart:w-[70%] h-[15rem] desktopstart:ml-4 w-[80%] mx-auto ">
-                            <img src="https://source.unsplash.com/random" alt="image not found"
+                            <img src="./assets/projects/lost and found.png" alt="image not found"
                                 class="w-full h-full rounded-md">
                         </div>
 
                         <div class=" border-green-600  w-[80%] flex items-center justify-center mt-6 mx-auto">
                             <div class=" border-black desktopstart:w-[80%] w-full ">
                                 <div id="heading" class=" border-black  text-2xl font-semibold text-gray-800 mb-4">
-                                    Modern Website
+                                    Lost and Found
                                 </div>
 
                                 <div id="content" class=" border-black  text-md font-normal text-gray-500">
-                                    Website Adaptable to all kinds of devices, with ui components and animated
-                                    interactions.
+                                    A firebase applicatin that enabled user for submitting lost or found items,
+                                    fostering a collaborative community effort in reuniting belongings with their
+                                    owners.
                                 </div>
 
-                                <button
-                                    class=" p-[0.65rem] bg-purple-600 text-white mt-4 desktopstart: rounded-md text-semibold">
-                                    Demo
-                                    <i class="uil uil-external-link-alt"></i>
-                                </button>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div
-                        class="swiper-slide mycard  border-black flex flex-col desktopstart:flex-row desktopstart:mt-8 mt-8 ">
-
-                        <div id="imagephotodiv"
-                            class=" border-red-400  desktopstart:w-[70%] h-[15rem] desktopstart:ml-4 w-[80%] mx-auto ">
-                            <img src="https://source.unsplash.com/random" alt="image not found"
-                                class="w-full h-full rounded-md">
-                        </div>
-
-                        <div class=" border-green-600  w-[80%] flex items-center justify-center mt-6 mx-auto">
-                            <div class=" border-black desktopstart:w-[80%] w-full ">
-                                <div id="heading" class=" border-black  text-2xl font-semibold text-gray-800 mb-4">
-                                    Modern Website
-                                </div>
-
-                                <div id="content" class=" border-black  text-md font-normal text-gray-500">
-                                    Website Adaptable to all kinds of devices, with ui components and animated
-                                    interactions.
-                                </div>
-
-                                <button
-                                    class=" p-[0.65rem] bg-purple-600 text-white mt-4 desktopstart: rounded-md text-semibold">
-                                    Demo
-                                    <i class="uil uil-external-link-alt"></i>
-                                </button>
+                                <a href="https://lostandfoundiiitdmj.firebaseapp.com/" target="_blank">
+                                    <button
+                                        class=" p-[0.65rem] bg-purple-600 text-white mt-4 desktopstart: rounded-md text-semibold">
+                                        Demo
+                                        <i class="uil uil-external-link-alt"></i>
+                                    </button>
+                                </a>
                             </div>
                         </div>
 
@@ -443,36 +456,6 @@
 
 
             </div>
-
-
-
-            <!-- <div class="mycard border-black flex flex-col desktopstart:flex-row desktopstart:mt-8 mt-8">
-
-                <div id="imagephotodiv"
-                    class=" border-red-400 w-full desktopstart:w-[70%] h-[15rem] desktopstart:ml-4 ">
-                    <img src="https://source.unsplash.com/random" alt="image not found"
-                        class="w-full h-full rounded-md">
-                </div>
-
-                <div class=" border-green-600  w-full flex items-center justify-center mt-6">
-                    <div class=" border-black desktopstart:w-[75%] w-full ">
-                        <div id="heading" class=" border-black mx-2 text-2xl font-semibold text-gray-800 mb-4">
-                            Modern Website
-                        </div>
-
-                        <div id="content" class=" border-black mx-2 text-md font-normal text-gray-500">
-                            Website Adaptable to all kinds of devices, with ui components and animated interactions.
-                        </div>
-
-                        <button
-                            class=" p-[0.65rem] bg-purple-600 text-white ml-2 mt-4 desktopstart: rounded-md text-semibold">
-                            Demo
-                            <i class="uil uil-external-link-alt"></i>
-                        </button>
-                    </div>
-                </div>
-
-            </div> -->
         </section>
 
 
@@ -552,18 +535,75 @@
 
 
 
-    <section id="bottomMenu" class=" border-black fixed bottom-0 w-full bg-white z-10 flex justify-between ">
-        <div class=" border-black p-2 font-bold"><img src="./MSLogo.png" alt="image not found" class="w-14 h-12"></div>
-        <div class="buttons flex  gap-4  border-y-emerald-700 mr-2">
-            <div class="dark-mode  border-red-500 w-7 flex items-center justify-center  cursor-pointer">
-                <img src="./assets/moon-light.svg" alt="image not found">
+
+    <section id="bottomMenu"
+        class="desktopstart:hidden border-black fixed bottom-0 w-full bg-white z-10 flex justify-between flex-col rounded-tr-lg rounded-tl-lg  ">
+
+        <div id="actualmenu" class="border-green-700 h-0 text-center p-1">
+
+            <div class="j border-red-500 flex ">
+                <div class="bottomMenuIconsDivs">
+                    <img src="./assets/bottomMenu/home-dark.svg" alt="image not found" class="bottomMenuIconsImg">
+                    home
+                </div>
+                <div class="bottomMenuIconsDivs">
+                    <img src="./assets/bottomMenu/about-dark.svg" alt="image not found" class="bottomMenuIconsImg">
+                    About
+                </div>
+                <div class="bottomMenuIconsDivs">
+                    <img src="./assets/bottomMenu/skills-dark.svg" alt="image not found" class="bottomMenuIconsImg">
+                    Skills
+                </div>
+
             </div>
-            <div class="menu  border-red-500  w-9 flex items-center justify-center cursor-pointer">
-                <img src="./assets/bars-light.svg" alt="image not found">
+
+            <div class="j border-red-500 flex ">
+                <div class="bottomMenuIconsDivs">
+                    <img src="./assets/bottomMenu/services-dark.svg" alt="image not found" class="bottomMenuIconsImg">
+                    Services
+                </div>
+                <div class="bottomMenuIconsDivs">
+                    <img src="./assets/bottomMenu/prt-dark.svg" alt="image not found" class="bottomMenuIconsImg">
+                    Portfolio
+                </div>
+
+                <div class="bottomMenuIconsDivs">
+                    <img src="./assets/bottomMenu/contactme-dark.svg" alt="image not found" class="bottomMenuIconsImg">
+                    Contact Me
+                </div>
             </div>
         </div>
-    </section>
 
+
+        <div class="bottommenuOptions z-10 flex  border-green-700 bg-white justify-between">
+            <div class=" border-black p-1 font-bold">
+                <img src="./MSLogo.png" alt="image not found" class="w-14 h-12">
+            </div>
+
+            <div class="buttons flex items-center  gap-4  border-y-emerald-700 mr-2">
+
+                <div id="bottomcross" class=" border-red-600 w-8 h-fit hidden" onclick="crossclick()">
+                    <img src="./assets/cross-dark.svg" alt="image not found">
+                </div>
+
+                <div id="BottomOtherOptions" class="flex gap-x-3">
+                    <div
+                        class="dark-mode border-red-500 w-5 flex items-center justify-center  cursor-pointer opacity-75">
+                        <img src="./assets/moon-light.svg" alt="image not found">
+                    </div>
+
+                    <div class="menu  border-red-500  w-7 flex items-center justify-center cursor-pointer opacity-75"
+                        onclick="toggleMenu()">
+                        <img src="./assets/bars-light.svg" alt="image not found">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
 </body>
 
 </html>

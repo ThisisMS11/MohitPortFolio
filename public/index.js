@@ -20,13 +20,32 @@ let swiper = new Swiper(".swiper", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
-    centeredSlidesBounds:true,
+    centeredSlidesBounds: true,
     pagination: {
         el: ".swiper-pagination",
     },
     spaceBetween: 100,
-    centeredSlides:true,
+    centeredSlides: true,
     mousewheel: true,
     keyboard: true,
-    loop:true
+    loop: true
 });
+
+// js for the manipulation of the bottom bar
+
+const actualmenu = document.getElementById('actualmenu');
+
+// To close the menu
+const crossclick = () => {
+    document.getElementById('bottomcross').classList.add('hidden');
+    document.getElementById("BottomOtherOptions").classList.remove('hidden');
+    actualmenu.classList.remove('actualmenu-show');
+}
+
+// to open the menu
+const toggleMenu = () => {
+
+    document.getElementById('bottomcross').classList.remove('hidden');
+    document.getElementById("BottomOtherOptions").classList.add('hidden');
+    actualmenu.classList.add('actualmenu-show');
+}
